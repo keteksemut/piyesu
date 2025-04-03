@@ -1,0 +1,44 @@
+.site-menu-toggle, .site-menu-close {
+    font-family: sans-serif;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .site-menu-toggle, .site-menu-close {
+        padding: 0 2rem;
+    }
+}
+
+.site-menu-close {
+    color: black;
+}
+
+.site-menu-toggle-icon, .site-menu-close-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+.site-menu-toggle-icon::before,
+.site-menu-toggle-icon::after,
+.site-menu-close-icon::before,
+.site-menu-close-icon::after {
+    content: "";
+    height: 1px;
+    background-color: black;
+}
+
+.site-menu-close-icon::before, .site-menu-close-icon::after {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+}
